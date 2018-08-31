@@ -1,0 +1,46 @@
+//FLEX BOX https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+.container{display: flex;}
+.containerInline{display: inline-flex;}
+
+// ROW IMG EXAMPLE https://css-tricks.com/wp-content/uploads/2013/04/flex-direction2.svg
+.row{flex-direction: row;} //row (default): left to right in ltr; right to left in rtl
+.rowRev{flex-direction: rowRev;} // right to left in ltr; left to right in rtl
+.col{flex-direction: column;} //same as row but top to bottom
+.colRev{flex-direction: column-reverse;}//same as row-reverse but bottom to top
+
+//WRAP EXAMPELS https://css-tricks.com/almanac/properties/f/flex-wrap/
+.noWrap{flex-wrap:nowrap;} //all flex items will be on one line
+.wrap{flex-wrap: wrap;} //lex items will wrap onto multiple lines, from top to bottom.
+.wrapRev{flex-wrap:wrap-reverse;}//flex items will wrap onto multiple lines from bottom to top.
+
+//JUSTIFY EXAMPELS https://css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg
+.start{justify-content: flex-start;} //(default): items are packed toward the start line
+.end{justify-content:flex-end;} // items are packed toward to end line
+.center{justify-content:center;} // items are centered along the line
+.spaceBetween{justify-content:space-between;} //items are evenly distributed in the line; first item is on the start line, last item on the end line
+.spaceAround{justify-content:space-around;} //items are evenly distributed in the line with equal space around them. 
+.spaceEven{justify-content:space-evenly;} // items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+
+//ALIGN ITEMS https://css-tricks.com/wp-content/uploads/2014/05/align-items.svg
+.aStart{align-items:flex-start;} //cross-start margin edge of the items is placed on the cross-start line
+.aEnd{align-items:flex-end;} //cross-end margin edge of the items is placed on the cross-end line
+.aCenter{align-items:center;} //items are centered in the cross-axis 
+.baseline{align-items:baseline;} //items are aligned such as their baselines align
+.stretch{align-items:stretch;} // (default): stretch to fill the container (still respect min-width/max-width)
+
+//ALIGN CONTENT https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg
+.cStat{align-content:flex-start;}//lines packed to the start of the container
+.cEnd{align-content:flex-end;} //lines packed to the end of the container
+.cCenter{align-content:center;} //lines packed to the center of the container
+.cBetween{align-content:space-between;} //lines evenly distributed; the first line is at the start of the container while the last one is at the end
+.cSpaceAround{align-content:space-around;} //lines evenly distributed with equal space around each line 
+.cStretch{align-content:stretch;} //(default) lines stretch to take up the remaining space
+
+//ALIGN SELF https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg
+//This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.
+.aSelfAuto{align-self:auto;} // 
+.aSelfStart{align-self:flex-start;} // 
+.aSelfEnd{align-self:flex-end;} // 
+.aSelfCenter{align-self:center;} // 
+.aSelfBaseline{align-self:baseline;} // 
+.aSelfStretch{align-self:stretch;} // 
